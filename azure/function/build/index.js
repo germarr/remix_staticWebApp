@@ -61,19 +61,54 @@ function App() {
   }, /* @__PURE__ */ React.createElement("head", null, /* @__PURE__ */ React.createElement(import_react2.Meta, null), /* @__PURE__ */ React.createElement(import_react2.Links, null)), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(import_react2.Outlet, null), /* @__PURE__ */ React.createElement(import_react2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_react2.Scripts, null), /* @__PURE__ */ React.createElement(import_react2.LiveReload, null)));
 }
 
-// app/routes/index.tsx
-var routes_exports = {};
-__export(routes_exports, {
+// app/routes/login/index.tsx
+var login_exports = {};
+__export(login_exports, {
   default: () => index,
   links: () => links
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-FUUYK5FN.css";
+var tailwind_default = "/build/_assets/tailwind-LPBUVCNP.css";
 
-// app/routes/index.tsx
+// app/routes/login/index.tsx
 var links = () => [{ rel: "stylesheet", href: tailwind_default }];
 function index() {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "bg-red-100 min-h-screen flex justify-center items-center"
+  }, /* @__PURE__ */ React.createElement("h1", {
+    className: "font-semibold text-3xl"
+  }, "Login"));
+}
+
+// app/routes/adios.tsx
+var adios_exports = {};
+__export(adios_exports, {
+  default: () => index2,
+  links: () => links2
+});
+var import_react3 = require("@remix-run/react");
+var links2 = () => [{ rel: "stylesheet", href: tailwind_default }];
+function index2() {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "bg-red-100 min-h-screen flex justify-center items-center"
+  }, /* @__PURE__ */ React.createElement("h1", {
+    className: "font-semibold text-3xl"
+  }, "Adios"), /* @__PURE__ */ React.createElement(import_react3.Link, {
+    to: "./login/"
+  }, /* @__PURE__ */ React.createElement("h1", {
+    className: "font-semibold text-3xl"
+  }, "Adios")));
+}
+
+// app/routes/index.tsx
+var routes_exports = {};
+__export(routes_exports, {
+  default: () => index3,
+  links: () => links3
+});
+var links3 = () => [{ rel: "stylesheet", href: tailwind_default }];
+function index3() {
   return /* @__PURE__ */ React.createElement("div", {
     className: "bg-red-100 min-h-screen flex justify-center items-center"
   }, /* @__PURE__ */ React.createElement("h1", {
@@ -82,7 +117,7 @@ function index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "7586d694", entry: { module: "/build/entry.client-JARROJGI.js", imports: ["/build/_shared/chunk-LD42F2JP.js", "/build/_shared/chunk-DNEVBLEG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-4FCXV2IT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-7PYJJGMA.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-7586D694.js" };
+var assets_manifest_default = { version: "27564b4e", entry: { module: "/build/entry.client-PT5O3VWJ.js", imports: ["/build/_shared/chunk-L66B4FC5.js", "/build/_shared/chunk-LHUECDNL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-5QXHCNOX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/adios": { id: "routes/adios", parentId: "root", path: "adios", index: void 0, caseSensitive: void 0, module: "/build/routes/adios-CAUTEVJQ.js", imports: ["/build/_shared/chunk-WKLL26BV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-QSFUZQRY.js", imports: ["/build/_shared/chunk-WKLL26BV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login/index": { id: "routes/login/index", parentId: "root", path: "login", index: !0, caseSensitive: void 0, module: "/build/routes/login/index-H76LWKF5.js", imports: ["/build/_shared/chunk-WKLL26BV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-27564B4E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -93,6 +128,22 @@ var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { mod
     index: void 0,
     caseSensitive: void 0,
     module: root_exports
+  },
+  "routes/login/index": {
+    id: "routes/login/index",
+    parentId: "root",
+    path: "login",
+    index: !0,
+    caseSensitive: void 0,
+    module: login_exports
+  },
+  "routes/adios": {
+    id: "routes/adios",
+    parentId: "root",
+    path: "adios",
+    index: void 0,
+    caseSensitive: void 0,
+    module: adios_exports
   },
   "routes/index": {
     id: "routes/index",
@@ -112,4 +163,3 @@ module.exports = __toCommonJS(stdin_exports);
   publicPath,
   routes
 });
-//# sourceMappingURL=index.js.map
