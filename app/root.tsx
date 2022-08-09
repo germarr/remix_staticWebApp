@@ -16,7 +16,7 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
-  const { env } = useLoaderData();
+
   return (
     <html lang="en">
       <head>
